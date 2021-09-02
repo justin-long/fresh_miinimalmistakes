@@ -14,15 +14,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Justin Long
+name: Justin Long
 email: temp@email.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+  Justin Long's portfolio. Justin Long is a 3rd year Ph.D. student in the Statistics Department at The Ohio State University in Columbus, Ohio.  
+# twitter_username: username
+github_username: justin-long
+minimal_mistakes_skin: dirt
 search: true
+
+
+# logo: "/assets/images/88x88.png"
 
 domain: justin-long.github.io
 url: http://justin-long.github.io # the base hostname & protocol for your site, e.g. http://example.com
@@ -63,34 +65,34 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
+  name   : "Justin Long"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "3rd year Ph.D. student in Statistics at The Ohio State University. "
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/justin-long"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/justin-long/"
+
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/justin-long"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/justin-long/"
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/     
 
 defaults:
   # _posts
@@ -101,9 +103,10 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
-      share: true
+      comments: false
+      share: false
       related: true
+      show_date: false
   # _pages
   - scope:
       path: "_pages"
@@ -111,7 +114,22 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
 
+      
+     
+
+     
+     
+atom_feed:
+  hide: true
+  
 category_archive:
   type: liquid
   path: /categories/
