@@ -42,6 +42,8 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
+  - _portfolio
+  - _resume
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -68,10 +70,11 @@ author:
   name   : "Justin Long"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "3rd year Ph.D. student in Statistics at The Ohio State University. "
+  location: "Columbus, OH"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:justinblong@outlook.com
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/justin-long"
