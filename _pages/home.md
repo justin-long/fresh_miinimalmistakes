@@ -3,7 +3,7 @@ title: Greetings
 layout: single
 permalink: /
 hidden: true
-excerpt: Modern data scientist with strong theoretical background.
+excerpt: Data scientist with strong theoretical background.
 ---
 ### Educational Background
 
