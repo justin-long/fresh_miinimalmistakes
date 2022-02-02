@@ -17,14 +17,13 @@ title: Justin Long
 name: Justin Long
 email: temp@email.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Justin Long's portfolio. Justin Long is a 3rd year Ph.D. student in the Statistics Department at The Ohio State University in Columbus, Ohio.  
+  Justin Long - Modern data scientist with strong theoretical background.  
 # twitter_username: username
 github_username: justin-long
 minimal_mistakes_skin: dirt
 search: true
 
 
-# logo: "/assets/images/88x88.png"
 
 domain: justin-long.github.io
 url: http://justin-long.github.io # the base hostname & protocol for your site, e.g. http://example.com
@@ -36,8 +35,8 @@ theme: minimal-mistakes-jekyll
 # remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
@@ -69,7 +68,13 @@ plugins:
 author:
   name   : "Justin Long"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "3rd year Ph.D. student in Statistics at The Ohio State University. "
+  bio    : |
+    3rd year Ph.D. student in Statistics at The Ohio State University. Data scientist with strong theoretical background.
+    
+    2021 - M.S. Statistics OSU
+    
+    2019 - B.S. Mathematics SRU
+    
   location: "Columbus, OH"
   links:
     - label: "Email"
